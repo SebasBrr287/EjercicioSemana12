@@ -1,14 +1,11 @@
 #include "funciones.h"
 
-// Tu función exacta con la limpieza de buffer integrada en una sola línea
+
 int ValidarIntconRango(int a, int b) {
     int n, aux;
     do {
         aux = scanf("%d", &n);
-        
-        // Limpia el buffer eficientemente de cualquier residuo o el ENTER
         while(getchar() != '\n'); 
-
         if(aux != 1 || n < a || n > b) {
             printf("Error el valor ingresado es incorrecto\n");
             printf("Vuelva a ingresar:\n");
