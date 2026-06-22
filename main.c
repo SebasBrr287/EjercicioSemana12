@@ -4,7 +4,7 @@
 int main(int argc, char *argv[]) {
     int opc;
 
-    // Genera los datos base de prueba si la base de datos se encuentra vacía
+
     inicializarInventarioBase();
 
     do {
